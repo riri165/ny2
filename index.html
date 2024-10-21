@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+</head>
+<body>
+    <header> <h1>Creamy Cookies</h1>
+    </header>
+    <section class="cookie-info">
+        <h2>Hva er cookies?</h2>
+        <p>Cookies er saftige og myke bakevarer som har en veldig spesiell smak med veldige mange kombinasjoner, hint hint hos oss finner du 5 nye cookies med forskjellige smaker!!! Kom og smak!!</p>
+    </section>
+    <section class="produkter">
+        <h2>Bestill våre produkter</h2>
+        <div class="produkt-list">
+            <div class="produkt">
+                <img src="redvelvet.jpg" alt="Produkt 1">
+                <h3>Redvelvet</h3>
+                <p>En ny variant av smaken redvelvet og blanding av vanilje.</p>
+                <button class="order-button" onclick="addToCart('Produkt 1')"><a href="">Bestill</a></button>
+            </div>
+
+            <div class="produkt">
+                <img src="skjoloade.jpg" alt="Produkt 2">
+                <h3>Original skjoloade</h3>
+                <p>Det nærmer seg haloween, derfor lanserer vi ut en taste test på våre spooky cookies med Karamell smak:)</p>
+                <button class="order-button" onclick="addToCart('Produkt 2')"><a href="">Bestill</a></button>
+            </div>
+            <div class="produkt">
+                <img src="blomstring.jpg" alt="Produkt 3">
+                <h3>Blomstring</h3>
+                <p></p>
+                <button class="order-button" onclick="addToCart('Produkt 2')"><a href="">Bestill</a></button>
+            </div>
+            <div class="produkt">
+                <img src="hjerte.jpg" alt="Produkt 4">
+                <h3>Hjerter</h3>
+                <p>Denne nyheten kommer bare en gang. </p>
+                <button class="order-button" onclick="addToCart('Produkt 2')"><a href="">Bestill</a></button>
+            </div>
+            <div class="produkt">
+                <img src="butterfly.jpg" alt="Produkt 5">
+                <h3>Butterfly</h3>
+                <p>limited edition</p>
+                <button class="order-button" onclick="addToCart('Produkt 2')"><a href="">Bestill</a></button>
+            </div>
+        </div>
+    </section>
+    <section class="kontakt-info">
+        <h2>Informasjon om oss</h2>
+        <p>Du finner oss her:</p>
+        <p><strong>Adresse:</strong>Nedre slottsgate 10, 0157 oslo</p>
+        <p><strong>Telefon:</strong> 479 23 962</p>
+        <p><strong>E-post:</strong> CreamyCookies@gmail.com</p>
+    </section>
+    <section class="åpnings-timer">
+        <h2>Åpningstider</h2>
+        <ul>
+            <li><strong>Mandag:</strong> 09:00 - 18:00</li>
+            <li><strong>Tirsdag:</strong> 09:00 - 18:00</li>
+            <li><strong>Onsdag:</strong> 09:00 - 18:00</li>
+            <li><strong>Torsdag:</strong> 09:00 - 20:00</li>
+            <li><strong>Fredag:</strong> 09:00 - 18:00</li>
+            <li><strong>Lørdag:</strong> 10:00 - 16:00</li>
+            <li><strong>Søndag:</strong> Stengt</li>
+        </ul>
+    </section>
+    <footer>
+        <p>© 2024 Creamy cookies</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+    header {
+    background-color: lightpink;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+    h1, h2 {
+    margin: 0.5em 0;
+}
+    .cookie-info {
+    padding: 2em;
+    background-color: #fff;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+    .produkter {
+    padding: 2em;
+}
+    .produkt-list {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+}
+    .produkt {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
+    max-width: 30%;
+    min-width: 250px; 
+}
+    .produkt img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+    button.order-button {
+    background-color: lightpink;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 0.5em;
+}
+    button.order-button:hover {
+    background-color: lightpink;
+}
+    footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 2em;
+}
+.kontakt-info {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+.åpnings-timer {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+.åpnings-timer h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.åpnings-timer ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.åpnings-timer li {
+    margin: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.åpnings-timer strong {
+    color: #333;
+    font-weight: bold;
+}
+</style>
+</html>
